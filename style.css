@@ -839,3 +839,11 @@ a:hover {
   color: var(--muted);
   border-top: 1px solid rgba(99,102,241,0.15);
 }
+.nav { display:flex; gap:18px; align-items:center; flex-wrap:wrap; }
+.nav a { color:var(--muted,#94a3b8); text-decoration:none; font-size:13px; font-weight:600; transition:.2s; }
+.nav a:hover { color:#fff; text-shadow:0 0 12px rgba(120,220,255,.7); }
+.btn.secondary { margin-left:10px; }
+a { transition: color .2s, opacity .2s, transform .2s; }
+a:hover { opacity:.9; }
+.card[id], section[id] { scroll-margin-top:90px; }
+@media(max-width:760px){ .nav { gap:10px; } .nav a { font-size:12px; } .btn.secondary { margin:8px 0 0; } }
