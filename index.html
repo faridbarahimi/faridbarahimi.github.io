@@ -430,7 +430,7 @@
     }).catch(()=>{});
 
     // VPS chat gateway. The public page never stores or sends the Gemini API key.
-    const chatEndpoint=window.AICP_CHAT_ENDPOINT||'';
+    const chatEndpoint=window.AICP_CHAT_ENDPOINT||'https://aicp-chat-clean.aicp-farid.workers.dev/chat';
     const chatHistory=[];
     const chatForm=$('chatForm'), chatInput=$('chatInput'), chatMessages=$('chatMessages'), chatState=$('chatState'), chatDot=$('chatDot'), chatSend=$('chatSend');
     function addChat(role,text){const box=document.createElement('div');box.className='chat-msg '+role;box.innerHTML='<span class="msg-role">'+(role==='user'?'YOU':'AICP')+'</span><p></p>';box.querySelector('p').textContent=text;chatMessages.appendChild(box);chatMessages.scrollTop=chatMessages.scrollHeight;}
