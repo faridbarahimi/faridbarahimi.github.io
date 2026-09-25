@@ -9,6 +9,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <meta property="og:title" content="AICP — AI Collaboration & Intelligence Platform" />
+  <meta property="og:description" content="Farid Barahimi — AI systems engineering, worker orchestration, governance, evidence and continuity." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://faridbarahimi.github.io/" />
+  <meta name="theme-color" content="#05070f" />
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Farid Barahimi","url":"https://faridbarahimi.github.io/","sameAs":["https://github.com/faridbarahimi"],"knowsAbout":["AI systems","AI agents","work orchestration","software architecture","AICP"]}
+  </script>
 </head>
 <body>
   <div class="bg-grid"></div>
@@ -224,6 +234,26 @@
           <div class="lang-item" style="--pct:13.2%;--c:#8b5cf6"><span>Other</span> 13.2%</div>
         </div>
       </div>
+    </section>
+
+    <!-- Live GitHub Intelligence -->
+    <section class="card github-live" id="github-live">
+      <div class="section-head">
+        <h2><span class="icon">◉</span> Live Engineering Intelligence <span class="badge">GitHub</span></h2>
+        <a class="section-link" href="https://github.com/faridbarahimi" target="_blank" rel="noopener">Open GitHub ↗</a>
+      </div>
+      <div class="gh-profile-strip">
+        <div class="gh-avatar-wrap"><img id="gh-avatar" alt="Farid Barahimi GitHub avatar" /></div>
+        <div class="gh-profile-copy"><strong id="gh-name">Loading profile…</strong><span id="gh-bio">Fetching public engineering activity</span></div>
+        <div class="gh-kpi"><b id="gh-repos">—</b><span>Repos</span></div>
+        <div class="gh-kpi"><b id="gh-followers">—</b><span>Followers</span></div>
+        <div class="gh-kpi"><b id="gh-stars">—</b><span>Stars</span></div>
+      </div>
+      <div class="gh-grid">
+        <div class="gh-panel"><div class="panel-title">PROJECTS</div><div id="gh-repos-list" class="repo-list"><div class="gh-loading">Synchronizing public repositories…</div></div></div>
+        <div class="gh-panel"><div class="panel-title">RECENT ACTIVITY</div><div id="gh-events" class="event-list"><div class="gh-loading">Reading GitHub events…</div></div></div>
+      </div>
+      <div class="gh-footer"><span><i class="status-dot"></i> Public GitHub data · refreshed automatically</span><span id="gh-updated">—</span></div>
     </section>
 
     <!-- Execution Pipeline -->
