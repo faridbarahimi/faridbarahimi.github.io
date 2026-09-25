@@ -1,0 +1,28 @@
+<svg viewBox='0 0 1400 220' xmlns='http://www.w3.org/2000/svg'>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#0d1128"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#1c2340" stroke-width="1"/>
+    </pattern>
+  <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+    <path d="M0,0 L6,3 L0,6 Z" fill="#4c5694"/></marker></defs>
+<rect width='1400' height='220' fill='url(#bg)'/><rect width='1400' height='220' fill='url(#grid)'/><rect x='155.0' y='78' width='190' height='64' rx='14' fill='#0d1230' stroke='#38bdf8' stroke-width='1.8'/><text x='250.0' y='108' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='14' font-weight='800' fill='#38bdf8' text-anchor='middle' letter-spacing='0'>Worker A</text><text x='250.0' y='128' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-weight='400' fill='#8b93b8' text-anchor='middle' letter-spacing='0'>Checkpoint</text><line x1='345.0' y1='110' x2='455.0' y2='110' stroke='#3d4680' stroke-width='2' marker-end='url(#arrowhead)'/><rect x='455.0' y='78' width='190' height='64' rx='14' fill='#0d1230' stroke='#ef4444' stroke-width='1.8'/><text x='550.0' y='116' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='14' font-weight='800' fill='#ef4444' text-anchor='middle' letter-spacing='0'>STOPPED</text><line x1='645.0' y1='110' x2='755.0' y2='110' stroke='#3d4680' stroke-width='2' marker-end='url(#arrowhead)'/><rect x='755.0' y='78' width='190' height='64' rx='14' fill='#0d1230' stroke='#22c55e' stroke-width='1.8'/><text x='850.0' y='108' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='14' font-weight='800' fill='#22c55e' text-anchor='middle' letter-spacing='0'>Worker B</text><text x='850.0' y='128' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='10.5' font-weight='400' fill='#8b93b8' text-anchor='middle' letter-spacing='0'>Continue</text><line x1='945.0' y1='110' x2='1055.0' y2='110' stroke='#3d4680' stroke-width='2' marker-end='url(#arrowhead)'/><rect x='1055.0' y='78' width='190' height='64' rx='14' fill='#0d1230' stroke='#8b5cf6' stroke-width='1.8'/><text x='1150.0' y='116' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='14' font-weight='800' fill='#8b5cf6' text-anchor='middle' letter-spacing='0'>Result</text><text x='700.0' y='202' font-family='Segoe UI, Helvetica, Arial, sans-serif' font-size='12.5' font-weight='700' fill='#9fb4ff' text-anchor='middle' letter-spacing='0'>Worker STOPPED ≠ Task STOPPED</text></svg>

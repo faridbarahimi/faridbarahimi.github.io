@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AICP — AI Collaboration & Intelligence Platform</title>
+  <meta name="description" content="Building the control plane for AI workers. Plan · Execute · Verify · Recover" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="logo-area">
+      <div class="logo-mark">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 28 L20 8 L32 28 Z" stroke="url(#logoGrad)" stroke-width="2.5" fill="none"/>
+          <path d="M14 28 L20 18 L26 28" stroke="url(#logoGrad)" stroke-width="2" fill="none"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="8" y1="8" x2="32" y2="28">
+              <stop stop-color="#6366f1"/>
+              <stop offset="1" stop-color="#06b6d4"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-title">AICP</span>
+        <span class="logo-sub">AI COLLABORATION & INTELLIGENCE PLATFORM</span>
+      </div>
+    </div>
+    <p class="tagline">Building the control plane for AI workers.<br/>
+      AICP orchestrates AI agents, models and tools with<br/>
+      governance, evidence and continuity — turning<br/>
+      ideas into reliable real-world outcomes.</p>
+    <div class="pipeline-badges">
+      <span class="p-badge plan">◎ PLAN</span>
+      <span class="p-badge execute">➤ EXECUTE</span>
+      <span class="p-badge verify">◉ VERIFY</span>
+      <span class="p-badge recover">↺ RECOVER</span>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="models-box">
+        <div class="box-label">MODELS</div>
+        <div class="model-icons">
+          <span title="GPT">GPT</span>
+          <span title="Claude">Claude</span>
+          <span title="Gemini">Gemini</span>
+          <span title="Llama">Llama</span>
+          <span title="Local">Local</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-center">
+      <div class="human-node">
+        <div class="node-icon human">👤</div>
+        <div class="node-label">HUMAN<br/><small>Ideas · Goals · Decisions</small></div>
+      </div>
+      <div class="core-node">
+        <div class="core-ring"></div>
+        <div class="core-inner">
+          <span class="core-logo">A</span>
+          <span class="core-name">AICP</span>
+        </div>
+      </div>
+      <div class="workers-row">
+        <div class="worker-card"><span class="w-icon">🧠</span><span>PLANNER</span></div>
+        <div class="worker-card"><span class="w-icon">⚙️</span><span>WORKER</span></div>
+        <div class="worker-card main"><span class="w-icon">🔍</span><span>REVIEWER</span></div>
+        <div class="worker-card"><span class="w-icon">🔍</span><span>REVIEWER</span></div>
+        <div class="worker-card"><span class="w-icon">🎯</span><span>SPECIALIST</span></div>
+      </div>
+      <div class="real-world">REAL WORLD WORK</div>
+    </div>
+
+    <div class="hero-right">
+      <div class="tools-box">
+        <div class="box-label">TOOLS</div>
+        <div class="tool-icons">
+          <span title="GitHub">GitHub</span>
+          <span title="IDE">IDE</span>
+          <span title="Web">Web</span>
+          <span title="Apps">Apps</span>
+          <span title="VPS">VPS</span>
+        </div>
+      </div>
+      <div class="live-overview">
+        <div class="live-title">AICP LIVE OVERVIEW</div>
+        <div class="live-stats">
+          <div class="stat">
+            <div class="stat-val">12</div>
+            <div class="stat-label"><span class="dot green"></span> Workers Active</div>
+          </div>
+          <div class="stat">
+            <div class="stat-val">48</div>
+            <div class="stat-label"><span class="dot blue"></span> Tasks Running</div>
+          </div>
+          <div class="stat">
+            <div class="stat-val">36</div>
+            <div class="stat-label"><span class="dot green"></span> Evidence Verified</div>
+          </div>
+          <div class="stat">
+            <div class="stat-val">8</div>
+            <div class="stat-label"><span class="dot cyan"></span> Models Online</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <blockquote class="quote">
+    “AI should not only answer.<br/><strong>AI should work.</strong>”
+  </blockquote>
+
+  <!-- ========== MAIN GRID ========== -->
+  <main class="dashboard">
+
+    <!-- What is AICP -->
+    <section class="card what-is">
+      <h2><span class="icon">💡</span> What is AICP?</h2>
+      <p>AICP is an open-source platform for orchestrating AI workers, models and tools with governance, traceability and cost control — designed for real work, not just conversations.</p>
+      <div class="feature-grid">
+        <div class="feat"><span>🔀</span> Multi-Model Support</div>
+        <div class="feat"><span>💰</span> Cost-Aware Routing</div>
+        <div class="feat"><span>🧾</span> Evidence & Verification</div>
+        <div class="feat"><span>🔁</span> Worker Continuity</div>
+        <div class="feat"><span>🛡️</span> Governance & Security</div>
+        <div class="feat"><span>📈</span> Scalable Architecture</div>
+      </div>
+    </section>
+
+    <!-- Architecture -->
+    <section class="card architecture">
+      <h2><span class="icon">🏗️</span> AICP Architecture <span class="badge">System Overview</span></h2>
+      <div class="arch-diagram">
+        <div class="arch-top">
+          <div class="arch-human">👤 HUMAN</div>
+        </div>
+        <div class="arch-flow">
+          <div class="arch-models">
+            <div class="arch-box-title">AI MODELS</div>
+            <ul>
+              <li>GPT-4 / GPT-4o</li>
+              <li>Claude</li>
+              <li>Gemini</li>
+              <li>Llama</li>
+              <li>Local Models</li>
+            </ul>
+          </div>
+          <div class="arch-core">
+            <div class="control-plane">AICP<br/>CONTROL PLANE</div>
+            <div class="arch-modules">
+              <div class="mod">Governance<br/><small>Policy · Security</small></div>
+              <div class="mod">Orchestration<br/><small>Planning · Execution</small></div>
+              <div class="mod">Routing<br/><small>Cost · Model · Context</small></div>
+              <div class="mod">State<br/><small>Memory · Checkpoint</small></div>
+              <div class="mod">Evidence<br/><small>Logs · Artifacts</small></div>
+              <div class="mod">Recovery<br/><small>Resilience · Retry</small></div>
+            </div>
+          </div>
+          <div class="arch-tools">
+            <div class="arch-box-title">TOOLS & ENVIRONMENTS</div>
+            <ul>
+              <li>GitHub</li>
+              <li>VS Code</li>
+              <li>Web & APIs</li>
+              <li>VPS / Cloud</li>
+              <li>Desktop Apps</li>
+            </ul>
+          </div>
+        </div>
+        <div class="arch-workers">
+          <div class="arch-box-title">AI WORKERS</div>
+          <div class="worker-bots">
+            <span>🤖</span><span>🤖</span><span>🤖</span><span>🤖</span><span>🤖</span>
+          </div>
+        </div>
+        <div class="arch-real">
+          <span>Code</span><span>Data</span><span>Systems</span><span>Business</span><span>People</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Worker Network -->
+    <section class="card worker-network">
+      <h2><span class="icon">🕸️</span> AI Worker Network</h2>
+      <div class="network">
+        <div class="n-node planner">Planner<br/><small>Plans & breaks down complex tasks</small></div>
+        <div class="n-node worker">Worker<br/><small>Executes tasks and uses tools</small></div>
+        <div class="n-node reviewer">Reviewer<br/><small>Validates results & ensures quality</small></div>
+        <div class="n-node researcher">Researcher<br/><small>Finds information & insights</small></div>
+        <div class="n-node specialist">Specialist<br/><small>Domain experts & deep analysis</small></div>
+        <div class="n-center">AICP</div>
+      </div>
+    </section>
+
+    <!-- Engineering Telemetry -->
+    <section class="card telemetry">
+      <h2><span class="icon">📡</span> Engineering Telemetry <span class="live-badge">● Live from GitHub</span></h2>
+      <div class="tele-grid">
+        <div class="tele-item"><div class="t-val">12</div><div class="t-label">Repositories</div></div>
+        <div class="tele-item"><div class="t-val green">Live</div><div class="t-label">Contributions</div></div>
+        <div class="tele-item"><div class="t-val green">Live</div><div class="t-label">Commits</div></div>
+        <div class="tele-item"><div class="t-val">Live</div><div class="t-label">Pull Requests</div></div>
+        <div class="tele-item"><div class="t-val">Live</div><div class="t-label">Issues</div></div>
+        <div class="tele-item"><div class="t-val">8</div><div class="t-label">Languages</div></div>
+      </div>
+      <div class="langs">
+        <div class="lang-bar">
+          <div class="lang-item" style="--pct:38.2%;--c:#3776ab"><span>Python</span> 38.2%</div>
+          <div class="lang-item" style="--pct:24.7%;--c:#3178c6"><span>TypeScript</span> 24.7%</div>
+          <div class="lang-item" style="--pct:15.3%;--c:#f7df1e"><span>JavaScript</span> 15.3%</div>
+          <div class="lang-item" style="--pct:8.6%;--c:#00add8"><span>Go</span> 8.6%</div>
+          <div class="lang-item" style="--pct:13.2%;--c:#8b5cf6"><span>Other</span> 13.2%</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Execution Pipeline -->
+    <section class="card pipeline">
+      <h2><span class="icon">⚡</span> Execution Pipeline</h2>
+      <div class="pipe">
+        <div class="pipe-step"><span>1</span>Intent<br/><small>User Goal</small></div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step"><span>2</span>Plan<br/><small>Strategy</small></div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step"><span>3</span>Task<br/><small>Breakdown</small></div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step"><span>4</span>Worker<br/><small>Execute</small></div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step"><span>5</span>Tool<br/><small>Action</small></div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step"><span>6</span>Evidence<br/><small>Trace</small></div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step"><span>7</span>Verify<br/><small>Confirm</small></div>
+      </div>
+    </section>
+
+    <!-- Cost-Aware Routing -->
+    <section class="card routing">
+      <h2><span class="icon">💰</span> Cost-Aware Routing</h2>
+      <div class="route-flow">
+        <div class="r-step">Task</div>
+        <div class="r-arrow">→</div>
+        <div class="r-step">Analysis</div>
+        <div class="r-arrow">→</div>
+        <div class="r-step">Complexity</div>
+        <div class="r-arrow">→</div>
+        <div class="r-step">Routing</div>
+      </div>
+      <div class="route-options">
+        <div class="r-opt free">Free / Local</div>
+        <div class="r-opt cheap">Cheap / API</div>
+        <div class="r-opt specialist">Specialist</div>
+        <div class="r-opt escalate">Escalation</div>
+      </div>
+    </section>
+
+    <!-- Worker Continuity -->
+    <section class="card continuity">
+      <h2><span class="icon">🔄</span> Worker Continuity</h2>
+      <div class="cont-flow">
+        <div class="c-box">Worker A<br/><small>Checkpoint</small></div>
+        <div class="c-arrow">→</div>
+        <div class="c-box stop">STOPPED</div>
+        <div class="c-arrow">→</div>
+        <div class="c-box">Worker B<br/><small>Continue</small></div>
+        <div class="c-arrow">→</div>
+        <div class="c-box result">Result</div>
+      </div>
+      <p class="cont-note">Worker STOPPED ≠ Task STOPPED</p>
+    </section>
+
+    <!-- Evidence Architecture -->
+    <section class="card evidence">
+      <h2><span class="icon">🧾</span> Evidence Architecture</h2>
+      <div class="ev-flow">
+        <div class="ev-item">Claim</div>
+        <div class="ev-arrow">→</div>
+        <div class="ev-item">Evidence</div>
+        <div class="ev-arrow">→</div>
+        <div class="ev-item">Command</div>
+        <div class="ev-arrow">→</div>
+        <div class="ev-item">Result</div>
+      </div>
+      <blockquote class="ev-quote">“The best systems are built by people who care.” — AICP</blockquote>
+    </section>
+
+    <!-- Ecosystem -->
+    <section class="card ecosystem">
+      <h2><span class="icon">🌐</span> AICP Ecosystem</h2>
+      <div class="eco-grid">
+        <div class="eco-item"><span class="eco-icon">👩‍💻</span> Karen<br/><small>AI Assistant</small></div>
+        <div class="eco-item"><span class="eco-icon">🤖</span> Workers<br/><small>AI Agents</small></div>
+        <div class="eco-item"><span class="eco-icon">🧩</span> Agents<br/><small>Specialized</small></div>
+        <div class="eco-item"><span class="eco-icon">🔌</span> Providers<br/><small>Models & Tools</small></div>
+      </div>
+    </section>
+
+    <!-- Architecture Status -->
+    <section class="card status">
+      <h2><span class="icon">📊</span> AICP Architecture Status</h2>
+      <div class="status-bars">
+        <div class="s-row"><span>Governance</span><div class="bar"><div style="width:100%"></div></div><span>100%</span><span class="s-tag active">Active</span></div>
+        <div class="s-row"><span>Execution</span><div class="bar"><div style="width:85%"></div></div><span>85%</span><span class="s-tag active">Active</span></div>
+        <div class="s-row"><span>Evidence</span><div class="bar"><div style="width:70%"></div></div><span>70%</span><span class="s-tag active">Active</span></div>
+        <div class="s-row"><span>Recovery</span><div class="bar"><div style="width:45%"></div></div><span>45%</span><span class="s-tag design">Design</span></div>
+        <div class="s-row"><span>Multi-Agent</span><div class="bar"><div style="width:30%"></div></div><span>30%</span><span class="s-tag design">Design</span></div>
+      </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section class="card roadmap">
+      <h2><span class="icon">🗺️</span> Roadmap</h2>
+      <div class="road">
+        <div class="r-item done"><div class="r-dot"></div><div class="r-ver">v0.1</div><div class="r-name">Core Platform</div><div class="r-state">Done</div></div>
+        <div class="r-item progress"><div class="r-dot"></div><div class="r-ver">v0.2</div><div class="r-name">Multi-Model</div><div class="r-state">In Progress</div></div>
+        <div class="r-item planned"><div class="r-dot"></div><div class="r-ver">v0.3</div><div class="r-name">Multi-Agent</div><div class="r-state">Planned</div></div>
+        <div class="r-item planned"><div class="r-dot"></div><div class="r-ver">v0.4</div><div class="r-name">Full Ecosystem</div><div class="r-state">Planned</div></div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="card cta">
+      <h2>Let’s Build The Future of AI Work</h2>
+      <p>Open Source · Collaborative · Reliable</p>
+      <a class="btn" href="https://github.com/faridbarahimi/faridbarahimi" target="_blank" rel="noopener">
+        Follow AICP on GitHub →
+      </a>
+      <blockquote class="final-quote">
+        “The best systems are built by people who care.” — AICP
+      </blockquote>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>AICP · AI Collaboration & Intelligence Platform · Built by <a href="https://github.com/faridbarahimi">faridbarahimi</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
