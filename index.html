@@ -1,76 +1,162 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Farid Barahimi — AICP | AI Work Control Plane</title>
-<meta name="description" content="Farid Barahimi — AICP, an AI Work Control Plane for governed, evidence-driven AI workers.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AICP — AI Work Control Plane | Farid Barahimi</title>
+<meta name="description" content="AICP — a public showcase for a governed AI work control plane, AI workers, model routing, evidence and continuity.">
 <meta property="og:title" content="AICP — AI Work Control Plane">
-<meta property="og:description" content="A governed execution layer for AI workers, models and tools.">
-<meta property="og:type" content="website"><meta property="og:url" content="https://faridbarahimi.github.io/">
-<link rel="icon" href="favicon.svg"><link rel="stylesheet" href="style.css">
+<meta property="og:description" content="AI that doesn't just answer. AI that works.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://faridbarahimi.github.io/">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="noise"></div><canvas id="stars"></canvas><div class="cursor-glow"></div>
+<div class="scroll-progress"><span id="scrollProgress"></span></div>
+<div class="command-hint">⌘ K / <b>EXPLORE</b></div>
+<div class="section-rail" aria-label="Section navigation"><span></span><a href="#vision" data-label="VISION"></a><a href="#architecture" data-label="ARCHITECTURE"></a><a href="#execution" data-label="EXECUTION"></a><a href="#routing" data-label="ROUTING"></a><a href="#models" data-label="MODELS"></a><a href="#evidence" data-label="EVIDENCE"></a><a href="#projects" data-label="PROJECTS"></a></div>
+<div class="ui-modal" id="uiModal" aria-hidden="true"><div class="modal-backdrop" data-close-modal></div><div class="modal-panel"><button class="modal-close" data-close-modal aria-label="Close">×</button><span class="kicker" id="modalKicker">AICP</span><h3 id="modalTitle">System node</h3><p id="modalBody"></p><div class="modal-meta" id="modalMeta"></div></div></div>
+<div class="fx-grid"></div><div class="fx-noise"></div><div class="cursor-glow"></div><canvas id="stars"></canvas>
 <header class="topbar">
-<a class="brand" href="#"><span class="brand-mark">A</span><span><b>AICP</b><small>AI WORK CONTROL PLANE</small></span></a>
+<a class="brand" href="#top"><span class="brand-mark">A</span><span><b>AICP</b><small>AI WORK CONTROL PLANE</small></span></a>
 <nav><a href="#vision">Vision</a><a href="#architecture">Architecture</a><a href="#execution">Execution</a><a href="#routing">Routing</a><a href="#continuity">Continuity</a><a href="#evidence">Evidence</a><a href="#projects">Projects</a></nav>
-<a class="top-cta" href="https://github.com/faridbarahimi/AICP-Core-Platform" target="_blank" rel="noopener">View Core ↗</a>
+<a class="top-cta" href="https://github.com/faridbarahimi" target="_blank" rel="noopener">GitHub ↗</a>
 </header>
-<main>
+<main id="top">
 <section class="hero" id="vision">
 <div class="hero-copy">
 <div class="eyebrow"><i></i> INDEPENDENT AI SYSTEMS ENGINEERING</div>
-<h1>AI that doesn’t just <em>answer.</em><br><strong>AI that works.</strong></h1>
-<p class="hero-lead">AICP is a work-control plane designed to turn human intent into governed, verifiable real-world execution — across models, workers, tools and environments.</p>
-<div class="hero-actions"><a class="btn primary" href="#architecture">Explore the system <span>↓</span></a><a class="btn ghost" href="https://github.com/faridbarahimi" target="_blank" rel="noopener">GitHub profile ↗</a></div>
-<div class="trust-row"><span>OPEN SOURCE</span><span>ARCHITECTURE-FIRST</span><span>EVIDENCE-DRIVEN</span><span>COST-AWARE</span></div>
+<h1>AI that doesn’t just <em>answer.</em><strong>AI that works.</strong></h1>
+<p class="hero-lead">AICP is a work-control plane designed to turn human intent into governed, verifiable real-world execution across models, workers, tools and environments.</p>
+<div class="hero-actions"><a class="btn primary" href="#architecture">Explore the system <span>↓</span></a><a class="btn ghost" href="#projects">View the work <span>↗</span></a></div>
+<div class="trust-row"><span>ARCHITECTURE-FIRST</span><span>EVIDENCE-DRIVEN</span><span>COST-AWARE</span><span>CONTINUITY</span></div>
 </div>
-<div class="hero-visual">
-<div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div>
-<div class="core"><span>A</span><b>AICP</b><small>CONTROL PLANE</small></div>
-<div class="node human" data-target="#architecture">HUMAN<small>Intent & authority</small></div>
-<div class="node models" data-target="#routing">MODELS<small>Reasoning engines</small></div>
-<div class="node workers" data-target="#execution">WORKERS<small>Task execution</small></div>
-<div class="node tools" data-target="#projects">TOOLS<small>Real-world action</small></div>
-<div class="beam b1"></div><div class="beam b2"></div><div class="beam b3"></div><div class="beam b4"></div>
+<div class="hero-map" aria-label="Interactive AICP system map">
+<div class="map-title">AICP / LIVE SYSTEM MAP <span><i></i> LIVE</span></div>
+<div class="map-core"><span class="core-ring"></span><b>A</b><strong>AICP</strong><small>CONTROL PLANE</small></div>
+<button class="map-node human" data-target="#architecture" data-node="human">HUMAN<small>Goals · Authority</small></button>
+<button class="map-node models" data-target="#routing" data-node="models">MODELS<small>Reasoning · Providers</small></button>
+<button class="map-node workers" data-target="#execution" data-node="workers">WORKERS<small>Plan · Execute · Review</small></button>
+<button class="map-node tools" data-target="#projects" data-node="tools">TOOLS<small>GitHub · Web · VPS · Apps</small></button>
+<button class="map-node evidence" data-target="#evidence" data-node="evidence">EVIDENCE<small>Claim · Result · Verify</small></button>
+<div class="pulse p1"></div><div class="pulse p2"></div><div class="pulse p3"></div>
+<svg class="map-lines" viewBox="0 0 700 520" preserveAspectRatio="none" aria-hidden="true">
+<path d="M350 260 C350 170 220 120 115 82"/><path d="M350 260 C350 165 500 125 590 82"/>
+<path d="M350 260 C250 325 160 380 100 435"/><path d="M350 260 C450 325 540 380 610 435"/>
+<path d="M350 260 C350 355 350 405 350 475"/>
+</svg>
 </div>
 </section>
-<section class="metrics reveal"><div><b>01</b><span>Human authority</span><small>Goals → decisions</small></div><div><b>02</b><span>Work orchestration</span><small>Plan → execute</small></div><div><b>03</b><span>Independent verification</span><small>Evidence → result</small></div><div><b>04</b><span>Continuity</span><small>Worker stops ≠ task stops</small></div></section>
+<section class="telemetry reveal" aria-label="Live telemetry">
+<div><span>REPOSITORIES</span><b id="repoCount">—</b><small>publicly visible</small></div>
+<div><span>FOLLOWERS</span><b id="followerCount">—</b><small>GitHub profile</small></div>
+<div><span>STARS</span><b id="starCount">—</b><small>public projects</small></div>
+<div><span>LANGUAGES</span><b id="languageCount">—</b><small>detected from public repos</small></div>
+<div><span>MODELS</span><b id="modelCount">—</b><small>public directory</small></div>
+<div class="telemetry-live"><i></i><span>DATA</span><b>LIVE</b><small id="lastUpdated">connecting…</small></div>
+</section>
+<section class="boundary-strip reveal" aria-label="Private and public boundary">
+<div class="boundary-private"><span>PRIVATE CORE</span><b>AICP CORE + OBSIDIAN</b><small>Implementation · architecture · internal knowledge · credentials</small></div>
+<div class="boundary-arrow">→</div>
+<div class="boundary-public"><span>PUBLIC FRONT DOOR</span><b>FARIDBARAHIMI.GITHUB.IO</b><small>Showcase · telemetry · diagrams · public links · no private source</small></div>
+</section>
+<section class="live-dashboard reveal" aria-label="Live public project charts">
+<div class="live-card"><div class="live-head"><span>PUBLIC PROJECT SIGNAL</span><b>LIVE</b></div><canvas id="repoChart" height="150"></canvas><small>Stars across publicly visible repositories</small></div>
+<div class="live-card"><div class="live-head"><span>MODEL DIRECTORY</span><b id="modelPulse">SYNC</b></div><div class="model-counter"><strong id="modelCountLarge">—</strong><span>models currently discoverable</span></div><div class="signal-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>Provider catalog is informational; no private inference credentials are exposed.</small></div>
+</section>
 <section class="section" id="architecture">
-<div class="section-head reveal"><div><span class="kicker">01 / SYSTEM DESIGN</span><h2>A control plane between intent and action.</h2></div><p>Instead of treating an AI model as the product, AICP treats intelligence as a replaceable capability inside a governed work system.</p></div>
-<div class="architecture-stage reveal">
-<div class="stage-label">AICP CONTROL PLANE / INTERACTIVE MAP</div>
-<div class="arch-row"><button data-target="#vision">HUMAN<span>Goals · Decisions</span></button><i>→</i><button class="active">AICP<span>Governance · State · Routing</span></button><i>→</i><button data-target="#routing">MODELS<span>Multiple providers</span></button></div>
-<div class="arch-row lower"><button data-target="#execution">WORKERS<span>Planner · Executor · Reviewer</span></button><i>↕</i><button data-target="#evidence">EVIDENCE<span>Claim · Command · Result</span></button><i>↕</i><button data-target="#projects">TOOLS<span>GitHub · Web · VPS · Apps</span></button></div>
-<div class="flowline"><span></span><span></span><span></span><span></span><span></span></div>
+<div class="section-head reveal"><div><span class="kicker">01 / SYSTEM DESIGN</span><h2>A control plane between intent and action.</h2></div><p>Intelligence is a replaceable capability. Governance, state, evidence and work ownership stay with the system.</p></div>
+<div class="control-board reveal">
+<div class="board-label">INTERACTIVE ARCHITECTURE / SELECT A NODE <span class="board-tip">CLICK ANY NODE FOR A SYSTEM BRIEF</span></div>
+<div class="board-grid">
+<button data-target="#vision" data-node="human"><b>HUMAN</b><small>Goals · Decisions · Authority</small></button>
+<button class="central" data-node="aicp"><b>AICP</b><small>Governance · State · Routing</small></button>
+<button data-target="#routing" data-node="models"><b>MODELS</b><small>Multiple providers · Capability</small></button>
+<button data-target="#execution" data-node="workers"><b>WORKERS</b><small>Planner · Executor · Reviewer</small></button>
+<button data-target="#evidence" data-node="evidence"><b>EVIDENCE</b><small>Claim · Command · Result</small></button>
+<button data-target="#projects" data-node="tools"><b>TOOLS</b><small>GitHub · Web · VPS · Apps</small></button>
 </div>
-<div class="cap-grid reveal"><article><b>Governance</b><p>Policy boundaries, human authorization and explicit execution states.</p></article><article><b>Orchestration</b><p>Decompose work into small, resumable task transactions.</p></article><article><b>Routing</b><p>Choose capability and cost before spending scarce inference.</p></article><article><b>State</b><p>Checkpoints preserve progress across workers and sessions.</p></article><article><b>Evidence</b><p>Make important work observable, queryable and independently verifiable.</p></article><article><b>Recovery</b><p>Replace a stopped worker without losing the task itself.</p></article></div>
+<div class="board-flow"><span>INTENT</span><i>→</i><span>CONTROL</span><i>→</i><span>EXECUTION</span><i>→</i><span>VERIFICATION</span></div>
+</div>
+<div class="cap-grid reveal">
+<article><b>Governance</b><p>Policy boundaries, human authorization and explicit execution states.</p></article>
+<article><b>Orchestration</b><p>Small, isolated and resumable task transactions.</p></article>
+<article><b>Routing</b><p>Capability and cost before scarce inference.</p></article>
+<article><b>State</b><p>Checkpoints preserve progress across workers and sessions.</p></article>
+<article><b>Evidence</b><p>Important work becomes observable and independently verifiable.</p></article>
+<article><b>Recovery</b><p>A stopped worker does not erase the task.</p></article>
+</div>
+<div class="concept-nav reveal">
+<a href="#architecture">GOVERNANCE</a><a href="#execution">ORCHESTRATION</a><a href="#routing">ROUTING</a><a href="#architecture">STATE</a><a href="#evidence">EVIDENCE</a><a href="#continuity">RECOVERY</a>
+<a href="#execution">PLANNER</a><a href="#execution">EXECUTOR</a><a href="#evidence">REVIEWER</a><a href="#models">RESEARCHER</a><a href="#models">SPECIALIST</a><a href="#projects">TOOLS</a>
+</div>
 </section>
 <section class="section dark" id="execution">
-<div class="section-head reveal"><div><span class="kicker">02 / EXECUTION</span><h2>From intent to a verified outcome.</h2></div><p>The visible pipeline is deliberately simple. The engineering underneath it is not.</p></div>
-<div class="timeline reveal"><button class="step" data-target="#evidence"><span>01</span><b>Intent</b><small>Human goal</small></button><i class="connector">→</i><button class="step" data-target="#evidence"><span>02</span><b>Plan</b><small>Strategy</small></button><i class="connector">→</i><button class="step" data-target="#evidence"><span>03</span><b>Task Transaction</b><small>Isolated scope</small></button><i class="connector">→</i><button class="step" data-target="#routing"><span>04</span><b>Route</b><small>Capability + cost</small></button><i class="connector">→</i><button class="step" data-target="#evidence"><span>05</span><b>Execute</b><small>Worker + tools</small></button><i class="connector">→</i><button class="step" data-target="#evidence"><span>06</span><b>Capture Evidence</b><small>Claim / command / result</small></button><i class="connector">→</i><button class="step" data-target="#evidence"><span>07</span><b>Verify</b><small>Independent check</small></button></div>
-<div class="statement reveal"><strong>Task transaction</strong><span>isolated worktree · allowed files · forbidden files · checkpoint · verification · no partial publication</span></div>
+<div class="section-head reveal"><div><span class="kicker">02 / EXECUTION</span><h2>From intent to a verified outcome.</h2></div><p>The visible pipeline is simple. Every stage has a boundary, owner and proof.</p></div>
+<div class="execution-pipeline reveal">
+<a href="#vision"><span>01</span><b>INTENT</b><small>Human goal</small></a><i>→</i>
+<a href="#architecture"><span>02</span><b>PLAN</b><small>Strategy</small></a><i>→</i>
+<a href="#architecture"><span>03</span><b>TASK</b><small>Isolated scope</small></a><i>→</i>
+<a href="#routing"><span>04</span><b>ROUTE</b><small>Capability + cost</small></a><i>→</i>
+<a href="#execution"><span>05</span><b>EXECUTE</b><small>Worker + tools</small></a><i>→</i>
+<a href="#evidence"><span>06</span><b>EVIDENCE</b><small>Trace the work</small></a><i>→</i>
+<a href="#evidence"><span>07</span><b>VERIFY</b><small>Independent check</small></a>
+</div>
+<div class="statement reveal"><strong>TASK TRANSACTION</strong><span>isolated worktree · allowed files · forbidden files · checkpoint · verification · no partial publication</span></div>
 </section>
 <section class="section split" id="routing">
-<div class="visual-card reveal" data-target="#routing"><span class="kicker">03 / ROUTING</span><h2>Spend intelligence where it matters.</h2><p>AICP separates simple work from specialist work and escalates only when capability or risk demands it.</p>
-<div class="route-chart"><span style="--w:88%">FREE / LOCAL <b>88%</b></span><span style="--w:65%">CHEAP API <b>65%</b></span><span style="--w:42%">CODER SPECIALIST <b>42%</b></span><span style="--w:22%">ESCALATION <b>22%</b></span></div></div>
-<div class="visual-card reveal" id="continuity"><span class="kicker">04 / CONTINUITY</span><h2>A worker can stop. The work does not.</h2><div class="handoff"><b>WORKER A</b><i>checkpoint</i><strong>STOPPED</strong><i>resume</i><b>WORKER B</b><i>verify</i><strong>RESULT</strong></div><p class="micro">State, artifacts and evidence remain task-owned — not trapped inside a single agent.</p></div>
-</section>
-<section class="section evidence-section" id="evidence">
-<div class="section-head reveal"><div><span class="kicker">05 / EVIDENCE</span><h2>Trust is an artifact, not a feeling.</h2></div><p>Important claims should carry enough evidence for another human or agent to inspect what happened.</p></div>
-<div class="evidence-flow reveal"><div><span>01</span><b>CLAIM</b><small>What is asserted?</small></div><i>→</i><div><span>02</span><b>EVIDENCE</b><small>What proves it?</small></div><i>→</i><div><span>03</span><b>COMMAND</b><small>What was executed?</small></div><i>→</i><div><span>04</span><b>RESULT</b><small>What happened?</small></div></div>
-<div class="labels reveal"><span>OBSERVED</span><span>VERIFIED</span><span>INFERRED</span><span>PROPOSED</span><span>UNKNOWN</span></div>
-</section>
-<section class="section projects" id="projects">
-<div class="section-head reveal"><div><span class="kicker">06 / PUBLIC WORK</span><h2>The engineering behind the vision.</h2></div><p>Explore the public repositories and the wider system vision.</p></div>
-<div class="project-grid reveal">
-<a href="https://github.com/faridbarahimi/AICP-Core-Platform" target="_blank" rel="noopener" class="project featured"><span class="project-num">01</span><span class="project-tag">CORE PLATFORM</span><h3>AICP Core Platform ↗</h3><p>The engineering foundation for governed AI work orchestration, execution and evidence.</p><footer><span>GitHub</span><span>Open source</span></footer></a>
-<a href="https://github.com/faridbarahimi" target="_blank" rel="noopener" class="project"><span class="project-num">02</span><span class="project-tag">ECOSYSTEM</span><h3>Farid Barahimi ↗</h3><p>Public engineering identity, experiments, architecture and active projects.</p><footer><span>GitHub profile</span><span>Live</span></footer></a>
-<a href="https://github.com/faridbarahimi/faridbarahimi.github.io" target="_blank" rel="noopener" class="project"><span class="project-num">03</span><span class="project-tag">THIS SHOWCASE</span><h3>Portfolio source ↗</h3><p>This interactive showcase — designed as the public front door to the system.</p><footer><span>Source</span><span>GitHub Pages</span></footer></a>
+<div class="visual-card reveal">
+<span class="kicker">03 / ROUTING</span><h2>Spend intelligence where it matters.</h2>
+<p>Simple work can use low-cost capability. Difficult or risky work can escalate. Verification remains independent.</p>
+<div class="route-visual">
+<div class="route-task">TASK</div><div class="route-arrow">→</div><div class="route-task">ANALYZE</div><div class="route-arrow">→</div><div class="route-task">ROUTE</div>
+<div class="route-branches"><a href="#routing">FREE / LOCAL <b>LOW COST</b></a><a href="#routing">CHEAP API <b>LOW COST</b></a><a href="#projects">CODER SPECIALIST <b>SPECIALIST</b></a><a href="#evidence">ESCALATION <b>RISK / CAPABILITY</b></a></div>
+</div>
+</div>
+<div class="visual-card reveal" id="continuity">
+<span class="kicker">04 / CONTINUITY</span><h2>A worker can stop. The work does not.</h2>
+<div class="handoff"><b>WORKER A</b><i>checkpoint</i><strong>STOPPED</strong><i>resume</i><b>WORKER B</b><i>verify</i><strong>RESULT</strong></div>
+<p class="micro">State, artifacts and evidence remain task-owned — not trapped inside a single agent.</p>
 </div>
 </section>
-<section class="closing reveal"><span class="kicker">AICP / PUBLIC SHOWCASE</span><h2>Building the control plane for AI work.</h2><p>For sponsors, collaborators, technical partners and people who want to build with the system.</p><div><a class="btn primary" href="https://github.com/faridbarahimi/AICP-Core-Platform" target="_blank" rel="noopener">Explore AICP Core ↗</a><a class="btn ghost" href="https://github.com/faridbarahimi" target="_blank" rel="noopener">Connect via GitHub ↗</a></div></section>
+<section class="section live-section" id="models">
+<div class="section-head reveal"><div><span class="kicker">05 / MODEL NETWORK</span><h2>Live capability map.</h2></div><p>Public model directories are used for discovery only. No private credentials or inference keys are exposed in this showcase.</p></div>
+<div class="model-grid reveal" id="modelGrid">
+<a href="https://openai.com/api/" target="_blank" rel="noopener"><b>OPENAI</b><span>API / Models</span><i>LIVE DIRECTORY</i></a>
+<a href="https://www.anthropic.com/api" target="_blank" rel="noopener"><b>ANTHROPIC</b><span>Claude / API</span><i>LIVE DIRECTORY</i></a>
+<a href="https://ai.google.dev/" target="_blank" rel="noopener"><b>GOOGLE</b><span>Gemini / AI</span><i>LIVE DIRECTORY</i></a>
+<a href="https://huggingface.co/models" target="_blank" rel="noopener"><b>HUGGING FACE</b><span>Open model ecosystem</span><i>LIVE DIRECTORY</i></a>
+<a href="https://openrouter.ai/models" target="_blank" rel="noopener"><b>OPENROUTER</b><span>Multi-provider catalog</span><i>LIVE DIRECTORY</i></a>
+<a href="https://github.com/" target="_blank" rel="noopener"><b>LOCAL / CUSTOM</b><span>Controlled capabilities</span><i>PRIVATE BY DESIGN</i></a>
+</div>
+<div class="live-model-list reveal" id="liveModelList" aria-label="Live model directory"></div>
+</section>
+<section class="section evidence-section" id="evidence">
+<div class="section-head reveal"><div><span class="kicker">06 / EVIDENCE</span><h2>Trust is an artifact, not a feeling.</h2></div><p>Important claims should carry enough evidence for another human or agent to inspect what happened.</p></div>
+<div class="evidence-flow reveal">
+<a href="#evidence"><span>01</span><b>CLAIM</b><small>What is asserted?</small></a><i>→</i>
+<a href="#evidence"><span>02</span><b>EVIDENCE</b><small>What proves it?</small></a><i>→</i>
+<a href="#evidence"><span>03</span><b>COMMAND</b><small>What was executed?</small></a><i>→</i>
+<a href="#evidence"><span>04</span><b>RESULT</b><small>What happened?</small></a><i>→</i>
+<a href="#evidence"><span>05</span><b>VERIFY</b><small>What was checked?</small></a>
+</div>
+<div class="labels reveal"><span>OBSERVED</span><span>VERIFIED</span><span>INFERRED</span><span>PROPOSED</span><span>UNKNOWN</span></div>
+</section>
+<section class="section" id="projects">
+<div class="section-head reveal"><div><span class="kicker">07 / PUBLIC SHOWCASE</span><h2>The work behind the vision.</h2></div><p>This page is a public front door. Private implementation remains outside the public showcase.</p></div>
+<div class="project-grid reveal">
+<a href="#architecture" class="project featured"><span class="project-num">01</span><span class="project-tag">AICP</span><h3>Core Platform ↗</h3><p>Governed AI work orchestration, execution control, evidence and architecture foundations.</p><footer><span>Private implementation</span><span>Public showcase</span></footer></a>
+<a href="https://github.com/faridbarahimi" target="_blank" rel="noopener" class="project"><span class="project-num">02</span><span class="project-tag">IDENTITY</span><h3>Engineering Profile ↗</h3><p>Public engineering identity, architecture direction and selected work.</p><footer><span>GitHub</span><span>Public</span></footer></a>
+<a href="#models" class="project"><span class="project-num">03</span><span class="project-tag">CAPABILITY</span><h3>Model Network</h3><p>Public capability directories and provider connections used for discovery.</p><footer><span>Live links</span><span>Dynamic</span></footer></a>
+</div>
+</section>
+<section class="section final-map">
+<div class="final-core reveal"><span>A</span><b>AICP</b><small>AI WORK CONTROL PLANE</small></div>
+<div class="final-copy reveal"><span class="kicker">AICP / PUBLIC FRONT DOOR</span><h2>AI should not only answer.<br><strong>AI should work.</strong></h2><p>Building governed, observable, resumable and economically sustainable AI work systems.</p><div><a class="btn primary" href="#architecture">Explore architecture ↓</a><a class="btn ghost" href="https://github.com/faridbarahimi" target="_blank" rel="noopener">Connect via GitHub ↗</a></div></div>
+</section>
 </main>
-<footer><span>FARID BARAHIMI / AICP</span><span>AI SYSTEMS · WORK ORCHESTRATION · GOVERNANCE</span><a href="#">Back to top ↑</a></footer>
+<footer><span>FARID BARAHIMI / AICP</span><span>AI SYSTEMS · WORK ORCHESTRATION · GOVERNANCE</span><a href="#top">Back to top ↑</a></footer>
 <script src="enhance.js"></script>
-</body></html>
+</body>
+</html>

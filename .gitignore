@@ -1,0 +1,19 @@
+# Local/editor backups — never publish
+*.ui-backup
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Local test/build output
+.pytest_cache/
+__pycache__/
+node_modules/
+dist/
+build/
+
+# Local configuration
+.env
+.env.*
+*.pem
+*.key
