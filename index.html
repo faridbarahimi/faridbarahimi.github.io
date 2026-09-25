@@ -1,386 +1,76 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AICP — AI Collaboration & Intelligence Platform</title>
-  <meta name="description" content="Building the control plane for AI workers. Plan · Execute · Verify · Recover" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <meta property="og:title" content="AICP — AI Collaboration & Intelligence Platform" />
-  <meta property="og:description" content="Farid Barahimi — AI systems engineering, worker orchestration, governance, evidence and continuity." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://faridbarahimi.github.io/" />
-  <meta name="theme-color" content="#05070f" />
-
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Person","name":"Farid Barahimi","url":"https://faridbarahimi.github.io/","sameAs":["https://github.com/faridbarahimi"],"knowsAbout":["AI systems","AI agents","work orchestration","software architecture","AICP"]}
-  </script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Farid Barahimi — AICP | AI Work Control Plane</title>
+<meta name="description" content="Farid Barahimi — AICP, an AI Work Control Plane for governed, evidence-driven AI workers.">
+<meta property="og:title" content="AICP — AI Work Control Plane">
+<meta property="og:description" content="A governed execution layer for AI workers, models and tools.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://faridbarahimi.github.io/">
+<link rel="icon" href="favicon.svg"><link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="bg-grid"></div>
-  <div class="bg-glow"></div>
-
-  <!-- ========== HEADER ========== -->
-  <header class="header">
-    <div class="logo-area">
-      <div class="logo-mark">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8 28 L20 8 L32 28 Z" stroke="url(#logoGrad)" stroke-width="2.5" fill="none"/>
-          <path d="M14 28 L20 18 L26 28" stroke="url(#logoGrad)" stroke-width="2" fill="none"/>
-          <defs>
-            <linearGradient id="logoGrad" x1="8" y1="8" x2="32" y2="28">
-              <stop stop-color="#6366f1"/>
-              <stop offset="1" stop-color="#06b6d4"/>
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
-      <div class="logo-text">
-        <span class="logo-title">AICP</span>
-        <span class="logo-sub">AI COLLABORATION & INTELLIGENCE PLATFORM</span>
-      </div>
-    </div>
-    <p class="tagline">Building the control plane for AI workers.<br/>
-      AICP orchestrates AI agents, models and tools with<br/>
-      governance, evidence and continuity — turning<br/>
-      ideas into reliable real-world outcomes.</p>
-    <div class="pipeline-badges">
-      <span class="p-badge plan">◎ PLAN</span>
-      <span class="p-badge execute">➤ EXECUTE</span>
-      <span class="p-badge verify">◉ VERIFY</span>
-      <span class="p-badge recover">↺ RECOVER</span>
-    </div>
-  </header>
-
-  <!-- ========== HERO ========== -->
-  <section class="hero">
-    <div class="hero-left">
-      <div class="models-box">
-        <div class="box-label">MODELS</div>
-        <div class="model-icons">
-          <span title="GPT">GPT</span>
-          <span title="Claude">Claude</span>
-          <span title="Gemini">Gemini</span>
-          <span title="Llama">Llama</span>
-          <span title="Local">Local</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-center">
-      <div class="human-node">
-        <div class="node-icon human">👤</div>
-        <div class="node-label">HUMAN<br/><small>Ideas · Goals · Decisions</small></div>
-      </div>
-      <div class="core-node">
-        <div class="core-ring"></div>
-        <div class="core-inner">
-          <span class="core-logo">A</span>
-          <span class="core-name">AICP</span>
-        </div>
-      </div>
-      <div class="workers-row">
-        <div class="worker-card"><span class="w-icon">🧠</span><span>PLANNER</span></div>
-        <div class="worker-card"><span class="w-icon">⚙️</span><span>WORKER</span></div>
-        <div class="worker-card main"><span class="w-icon">🔍</span><span>REVIEWER</span></div>
-        <div class="worker-card"><span class="w-icon">🔍</span><span>REVIEWER</span></div>
-        <div class="worker-card"><span class="w-icon">🎯</span><span>SPECIALIST</span></div>
-      </div>
-      <div class="real-world">REAL WORLD WORK</div>
-    </div>
-
-    <div class="hero-right">
-      <div class="tools-box">
-        <div class="box-label">TOOLS</div>
-        <div class="tool-icons">
-          <span title="GitHub">GitHub</span>
-          <span title="IDE">IDE</span>
-          <span title="Web">Web</span>
-          <span title="Apps">Apps</span>
-          <span title="VPS">VPS</span>
-        </div>
-      </div>
-      <div class="live-overview">
-        <div class="live-title">AICP LIVE OVERVIEW</div>
-        <div class="live-stats">
-          <div class="stat">
-            <div class="stat-val">12</div>
-            <div class="stat-label"><span class="dot green"></span> Workers Active</div>
-          </div>
-          <div class="stat">
-            <div class="stat-val">48</div>
-            <div class="stat-label"><span class="dot blue"></span> Tasks Running</div>
-          </div>
-          <div class="stat">
-            <div class="stat-val">36</div>
-            <div class="stat-label"><span class="dot green"></span> Evidence Verified</div>
-          </div>
-          <div class="stat">
-            <div class="stat-val">8</div>
-            <div class="stat-label"><span class="dot cyan"></span> Models Online</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <blockquote class="quote">
-    “AI should not only answer.<br/><strong>AI should work.</strong>”
-  </blockquote>
-
-  <!-- ========== MAIN GRID ========== -->
-  <main class="dashboard">
-
-    <!-- What is AICP -->
-    <section class="card what-is" id="about">
-      <h2><span class="icon">💡</span> What is AICP?</h2>
-      <p>AICP is an open-source platform for orchestrating AI workers, models and tools with governance, traceability and cost control — designed for real work, not just conversations.</p>
-      <div class="feature-grid">
-        <div class="feat"><span>🔀</span> Multi-Model Support</div>
-        <div class="feat"><span>💰</span> Cost-Aware Routing</div>
-        <div class="feat"><span>🧾</span> Evidence & Verification</div>
-        <div class="feat"><span>🔁</span> Worker Continuity</div>
-        <div class="feat"><span>🛡️</span> Governance & Security</div>
-        <div class="feat"><span>📈</span> Scalable Architecture</div>
-      </div>
-    </section>
-
-    <!-- Architecture -->
-    <section class="card architecture" id="architecture">
-      <h2><span class="icon">🏗️</span> AICP Architecture <span class="badge">System Overview</span></h2>
-      <div class="arch-diagram">
-        <div class="arch-top">
-          <div class="arch-human">👤 HUMAN</div>
-        </div>
-        <div class="arch-flow">
-          <div class="arch-models">
-            <div class="arch-box-title">AI MODELS</div>
-            <ul>
-              <li>GPT-4 / GPT-4o</li>
-              <li>Claude</li>
-              <li>Gemini</li>
-              <li>Llama</li>
-              <li>Local Models</li>
-            </ul>
-          </div>
-          <div class="arch-core">
-            <div class="control-plane">AICP<br/>CONTROL PLANE</div>
-            <div class="arch-modules">
-              <div class="mod">Governance<br/><small>Policy · Security</small></div>
-              <div class="mod">Orchestration<br/><small>Planning · Execution</small></div>
-              <div class="mod">Routing<br/><small>Cost · Model · Context</small></div>
-              <div class="mod">State<br/><small>Memory · Checkpoint</small></div>
-              <div class="mod">Evidence<br/><small>Logs · Artifacts</small></div>
-              <div class="mod">Recovery<br/><small>Resilience · Retry</small></div>
-            </div>
-          </div>
-          <div class="arch-tools">
-            <div class="arch-box-title">TOOLS & ENVIRONMENTS</div>
-            <ul>
-              <li>GitHub</li>
-              <li>VS Code</li>
-              <li>Web & APIs</li>
-              <li>VPS / Cloud</li>
-              <li>Desktop Apps</li>
-            </ul>
-          </div>
-        </div>
-        <div class="arch-workers">
-          <div class="arch-box-title">AI WORKERS</div>
-          <div class="worker-bots">
-            <span>🤖</span><span>🤖</span><span>🤖</span><span>🤖</span><span>🤖</span>
-          </div>
-        </div>
-        <div class="arch-real">
-          <span>Code</span><span>Data</span><span>Systems</span><span>Business</span><span>People</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- AI Worker Network -->
-    <section class="card worker-network">
-      <h2><span class="icon">🕸️</span> AI Worker Network</h2>
-      <div class="network">
-        <div class="n-node planner">Planner<br/><small>Plans & breaks down complex tasks</small></div>
-        <div class="n-node worker">Worker<br/><small>Executes tasks and uses tools</small></div>
-        <div class="n-node reviewer">Reviewer<br/><small>Validates results & ensures quality</small></div>
-        <div class="n-node researcher">Researcher<br/><small>Finds information & insights</small></div>
-        <div class="n-node specialist">Specialist<br/><small>Domain experts & deep analysis</small></div>
-        <div class="n-center">AICP</div>
-      </div>
-    </section>
-
-    <!-- Engineering Telemetry -->
-    <section class="card telemetry" id="telemetry">
-      <h2><span class="icon">📡</span> Engineering Telemetry <span class="live-badge">● Live from GitHub</span></h2>
-      <div class="tele-grid">
-        <div class="tele-item"><div class="t-val">12</div><div class="t-label">Repositories</div></div>
-        <div class="tele-item"><div class="t-val green">Live</div><div class="t-label">Contributions</div></div>
-        <div class="tele-item"><div class="t-val green">Live</div><div class="t-label">Commits</div></div>
-        <div class="tele-item"><div class="t-val">Live</div><div class="t-label">Pull Requests</div></div>
-        <div class="tele-item"><div class="t-val">Live</div><div class="t-label">Issues</div></div>
-        <div class="tele-item"><div class="t-val">8</div><div class="t-label">Languages</div></div>
-      </div>
-      <div class="langs">
-        <div class="lang-bar">
-          <div class="lang-item" style="--pct:38.2%;--c:#3776ab"><span>Python</span> 38.2%</div>
-          <div class="lang-item" style="--pct:24.7%;--c:#3178c6"><span>TypeScript</span> 24.7%</div>
-          <div class="lang-item" style="--pct:15.3%;--c:#f7df1e"><span>JavaScript</span> 15.3%</div>
-          <div class="lang-item" style="--pct:8.6%;--c:#00add8"><span>Go</span> 8.6%</div>
-          <div class="lang-item" style="--pct:13.2%;--c:#8b5cf6"><span>Other</span> 13.2%</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Live GitHub Intelligence -->
-    <section class="card github-live" id="github-live">
-      <div class="section-head">
-        <h2><span class="icon">◉</span> Live Engineering Intelligence <span class="badge">GitHub</span></h2>
-        <a class="section-link" href="https://github.com/faridbarahimi" target="_blank" rel="noopener">Open GitHub ↗</a>
-      </div>
-      <div class="gh-profile-strip">
-        <div class="gh-avatar-wrap"><img id="gh-avatar" alt="Farid Barahimi GitHub avatar" /></div>
-        <div class="gh-profile-copy"><strong id="gh-name">Loading profile…</strong><span id="gh-bio">Fetching public engineering activity</span></div>
-        <div class="gh-kpi"><b id="gh-repos">—</b><span>Repos</span></div>
-        <div class="gh-kpi"><b id="gh-followers">—</b><span>Followers</span></div>
-        <div class="gh-kpi"><b id="gh-stars">—</b><span>Stars</span></div>
-      </div>
-      <div class="gh-grid">
-        <div class="gh-panel"><div class="panel-title">PROJECTS</div><div id="gh-repos-list" class="repo-list"><div class="gh-loading">Synchronizing public repositories…</div></div></div>
-        <div class="gh-panel"><div class="panel-title">RECENT ACTIVITY</div><div id="gh-events" class="event-list"><div class="gh-loading">Reading GitHub events…</div></div></div>
-      </div>
-      <div class="gh-footer"><span><i class="status-dot"></i> Public GitHub data · refreshed automatically</span><span id="gh-updated">—</span></div>
-    </section>
-
-    <!-- Execution Pipeline -->
-    <section class="card pipeline" id="pipeline">
-      <h2><span class="icon">⚡</span> Execution Pipeline</h2>
-      <div class="pipe">
-        <div class="pipe-step"><span>1</span>Intent<br/><small>User Goal</small></div>
-        <div class="pipe-arrow">→</div>
-        <div class="pipe-step"><span>2</span>Plan<br/><small>Strategy</small></div>
-        <div class="pipe-arrow">→</div>
-        <div class="pipe-step"><span>3</span>Task<br/><small>Breakdown</small></div>
-        <div class="pipe-arrow">→</div>
-        <div class="pipe-step"><span>4</span>Worker<br/><small>Execute</small></div>
-        <div class="pipe-arrow">→</div>
-        <div class="pipe-step"><span>5</span>Tool<br/><small>Action</small></div>
-        <div class="pipe-arrow">→</div>
-        <div class="pipe-step"><span>6</span>Evidence<br/><small>Trace</small></div>
-        <div class="pipe-arrow">→</div>
-        <div class="pipe-step"><span>7</span>Verify<br/><small>Confirm</small></div>
-      </div>
-    </section>
-
-    <!-- Cost-Aware Routing -->
-    <section class="card routing" id="routing">
-      <h2><span class="icon">💰</span> Cost-Aware Routing</h2>
-      <div class="route-flow">
-        <div class="r-step">Task</div>
-        <div class="r-arrow">→</div>
-        <div class="r-step">Analysis</div>
-        <div class="r-arrow">→</div>
-        <div class="r-step">Complexity</div>
-        <div class="r-arrow">→</div>
-        <div class="r-step">Routing</div>
-      </div>
-      <div class="route-options">
-        <div class="r-opt free">Free / Local</div>
-        <div class="r-opt cheap">Cheap / API</div>
-        <div class="r-opt specialist">Specialist</div>
-        <div class="r-opt escalate">Escalation</div>
-      </div>
-    </section>
-
-    <!-- Worker Continuity -->
-    <section class="card continuity" id="continuity">
-      <h2><span class="icon">🔄</span> Worker Continuity</h2>
-      <div class="cont-flow">
-        <div class="c-box">Worker A<br/><small>Checkpoint</small></div>
-        <div class="c-arrow">→</div>
-        <div class="c-box stop">STOPPED</div>
-        <div class="c-arrow">→</div>
-        <div class="c-box">Worker B<br/><small>Continue</small></div>
-        <div class="c-arrow">→</div>
-        <div class="c-box result">Result</div>
-      </div>
-      <p class="cont-note">Worker STOPPED ≠ Task STOPPED</p>
-    </section>
-
-    <!-- Evidence Architecture -->
-    <section class="card evidence" id="evidence">
-      <h2><span class="icon">🧾</span> Evidence Architecture</h2>
-      <div class="ev-flow">
-        <div class="ev-item">Claim</div>
-        <div class="ev-arrow">→</div>
-        <div class="ev-item">Evidence</div>
-        <div class="ev-arrow">→</div>
-        <div class="ev-item">Command</div>
-        <div class="ev-arrow">→</div>
-        <div class="ev-item">Result</div>
-      </div>
-      <blockquote class="ev-quote">“The best systems are built by people who care.” — AICP</blockquote>
-    </section>
-
-    <!-- Ecosystem -->
-    <section class="card ecosystem" id="ecosystem">
-      <h2><span class="icon">🌐</span> AICP Ecosystem</h2>
-      <div class="eco-grid">
-        <div class="eco-item"><span class="eco-icon">👩‍💻</span> Karen<br/><small>AI Assistant</small></div>
-        <div class="eco-item"><span class="eco-icon">🤖</span> Workers<br/><small>AI Agents</small></div>
-        <div class="eco-item"><span class="eco-icon">🧩</span> Agents<br/><small>Specialized</small></div>
-        <div class="eco-item"><span class="eco-icon">🔌</span> Providers<br/><small>Models & Tools</small></div>
-      </div>
-    </section>
-
-    <!-- Architecture Status -->
-    <section class="card status" id="status">
-      <h2><span class="icon">📊</span> AICP Architecture Status</h2>
-      <div class="status-bars">
-        <div class="s-row"><span>Governance</span><div class="bar"><div style="width:100%"></div></div><span>100%</span><span class="s-tag active">Active</span></div>
-        <div class="s-row"><span>Execution</span><div class="bar"><div style="width:85%"></div></div><span>85%</span><span class="s-tag active">Active</span></div>
-        <div class="s-row"><span>Evidence</span><div class="bar"><div style="width:70%"></div></div><span>70%</span><span class="s-tag active">Active</span></div>
-        <div class="s-row"><span>Recovery</span><div class="bar"><div style="width:45%"></div></div><span>45%</span><span class="s-tag design">Design</span></div>
-        <div class="s-row"><span>Multi-Agent</span><div class="bar"><div style="width:30%"></div></div><span>30%</span><span class="s-tag design">Design</span></div>
-      </div>
-    </section>
-
-    <!-- Roadmap -->
-    <section class="card roadmap" id="roadmap">
-      <h2><span class="icon">🗺️</span> Roadmap</h2>
-      <div class="road">
-        <div class="r-item done"><div class="r-dot"></div><div class="r-ver">v0.1</div><div class="r-name">Core Platform</div><div class="r-state">Done</div></div>
-        <div class="r-item progress"><div class="r-dot"></div><div class="r-ver">v0.2</div><div class="r-name">Multi-Model</div><div class="r-state">In Progress</div></div>
-        <div class="r-item planned"><div class="r-dot"></div><div class="r-ver">v0.3</div><div class="r-name">Multi-Agent</div><div class="r-state">Planned</div></div>
-        <div class="r-item planned"><div class="r-dot"></div><div class="r-ver">v0.4</div><div class="r-name">Full Ecosystem</div><div class="r-state">Planned</div></div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="card cta">
-      <h2>Let’s Build The Future of AI Work</h2>
-      <p>Open Source · Collaborative · Reliable</p>
-      <div class="cta-actions">
-        <a class="btn" href="https://github.com/faridbarahimi/AICP-Core-Platform" target="_blank" rel="noopener">View AICP Core →</a>
-        <a class="btn secondary" href="https://github.com/faridbarahimi" target="_blank" rel="noopener">GitHub Profile ↗</a>
-        <a class="btn secondary" href="https://github.com/faridbarahimi/faridbarahimi.github.io" target="_blank" rel="noopener">This Site ↗</a>
-      </div>
-      <blockquote class="final-quote">
-        “The best systems are built by people who care.” — AICP
-      </blockquote>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <p>AICP · AI Collaboration & Intelligence Platform · Built by <a href="https://github.com/faridbarahimi">faridbarahimi</a></p>
-  </footer>
-
-  <script src="script.js"></script>
-  <script src="enhance.js"></script>
-</body>
-</html>
+<div class="noise"></div><canvas id="stars"></canvas><div class="cursor-glow"></div>
+<header class="topbar">
+<a class="brand" href="#"><span class="brand-mark">A</span><span><b>AICP</b><small>AI WORK CONTROL PLANE</small></span></a>
+<nav><a href="#vision">Vision</a><a href="#architecture">Architecture</a><a href="#execution">Execution</a><a href="#routing">Routing</a><a href="#continuity">Continuity</a><a href="#evidence">Evidence</a><a href="#projects">Projects</a></nav>
+<a class="top-cta" href="https://github.com/faridbarahimi/AICP-Core-Platform" target="_blank" rel="noopener">View Core ↗</a>
+</header>
+<main>
+<section class="hero" id="vision">
+<div class="hero-copy">
+<div class="eyebrow"><i></i> INDEPENDENT AI SYSTEMS ENGINEERING</div>
+<h1>AI that doesn’t just <em>answer.</em><br><strong>AI that works.</strong></h1>
+<p class="hero-lead">AICP is a work-control plane designed to turn human intent into governed, verifiable real-world execution — across models, workers, tools and environments.</p>
+<div class="hero-actions"><a class="btn primary" href="#architecture">Explore the system <span>↓</span></a><a class="btn ghost" href="https://github.com/faridbarahimi" target="_blank" rel="noopener">GitHub profile ↗</a></div>
+<div class="trust-row"><span>OPEN SOURCE</span><span>ARCHITECTURE-FIRST</span><span>EVIDENCE-DRIVEN</span><span>COST-AWARE</span></div>
+</div>
+<div class="hero-visual">
+<div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div>
+<div class="core"><span>A</span><b>AICP</b><small>CONTROL PLANE</small></div>
+<div class="node human" data-target="#architecture">HUMAN<small>Intent & authority</small></div>
+<div class="node models" data-target="#routing">MODELS<small>Reasoning engines</small></div>
+<div class="node workers" data-target="#execution">WORKERS<small>Task execution</small></div>
+<div class="node tools" data-target="#projects">TOOLS<small>Real-world action</small></div>
+<div class="beam b1"></div><div class="beam b2"></div><div class="beam b3"></div><div class="beam b4"></div>
+</div>
+</section>
+<section class="metrics reveal"><div><b>01</b><span>Human authority</span><small>Goals → decisions</small></div><div><b>02</b><span>Work orchestration</span><small>Plan → execute</small></div><div><b>03</b><span>Independent verification</span><small>Evidence → result</small></div><div><b>04</b><span>Continuity</span><small>Worker stops ≠ task stops</small></div></section>
+<section class="section" id="architecture">
+<div class="section-head reveal"><div><span class="kicker">01 / SYSTEM DESIGN</span><h2>A control plane between intent and action.</h2></div><p>Instead of treating an AI model as the product, AICP treats intelligence as a replaceable capability inside a governed work system.</p></div>
+<div class="architecture-stage reveal">
+<div class="stage-label">AICP CONTROL PLANE / INTERACTIVE MAP</div>
+<div class="arch-row"><button data-target="#vision">HUMAN<span>Goals · Decisions</span></button><i>→</i><button class="active">AICP<span>Governance · State · Routing</span></button><i>→</i><button data-target="#routing">MODELS<span>Multiple providers</span></button></div>
+<div class="arch-row lower"><button data-target="#execution">WORKERS<span>Planner · Executor · Reviewer</span></button><i>↕</i><button data-target="#evidence">EVIDENCE<span>Claim · Command · Result</span></button><i>↕</i><button data-target="#projects">TOOLS<span>GitHub · Web · VPS · Apps</span></button></div>
+<div class="flowline"><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+<div class="cap-grid reveal"><article><b>Governance</b><p>Policy boundaries, human authorization and explicit execution states.</p></article><article><b>Orchestration</b><p>Decompose work into small, resumable task transactions.</p></article><article><b>Routing</b><p>Choose capability and cost before spending scarce inference.</p></article><article><b>State</b><p>Checkpoints preserve progress across workers and sessions.</p></article><article><b>Evidence</b><p>Make important work observable, queryable and independently verifiable.</p></article><article><b>Recovery</b><p>Replace a stopped worker without losing the task itself.</p></article></div>
+</section>
+<section class="section dark" id="execution">
+<div class="section-head reveal"><div><span class="kicker">02 / EXECUTION</span><h2>From intent to a verified outcome.</h2></div><p>The visible pipeline is deliberately simple. The engineering underneath it is not.</p></div>
+<div class="timeline reveal"><button class="step" data-target="#evidence"><span>01</span><b>Intent</b><small>Human goal</small></button><i class="connector">→</i><button class="step" data-target="#evidence"><span>02</span><b>Plan</b><small>Strategy</small></button><i class="connector">→</i><button class="step" data-target="#evidence"><span>03</span><b>Task Transaction</b><small>Isolated scope</small></button><i class="connector">→</i><button class="step" data-target="#routing"><span>04</span><b>Route</b><small>Capability + cost</small></button><i class="connector">→</i><button class="step" data-target="#evidence"><span>05</span><b>Execute</b><small>Worker + tools</small></button><i class="connector">→</i><button class="step" data-target="#evidence"><span>06</span><b>Capture Evidence</b><small>Claim / command / result</small></button><i class="connector">→</i><button class="step" data-target="#evidence"><span>07</span><b>Verify</b><small>Independent check</small></button></div>
+<div class="statement reveal"><strong>Task transaction</strong><span>isolated worktree · allowed files · forbidden files · checkpoint · verification · no partial publication</span></div>
+</section>
+<section class="section split" id="routing">
+<div class="visual-card reveal" data-target="#routing"><span class="kicker">03 / ROUTING</span><h2>Spend intelligence where it matters.</h2><p>AICP separates simple work from specialist work and escalates only when capability or risk demands it.</p>
+<div class="route-chart"><span style="--w:88%">FREE / LOCAL <b>88%</b></span><span style="--w:65%">CHEAP API <b>65%</b></span><span style="--w:42%">CODER SPECIALIST <b>42%</b></span><span style="--w:22%">ESCALATION <b>22%</b></span></div></div>
+<div class="visual-card reveal" id="continuity"><span class="kicker">04 / CONTINUITY</span><h2>A worker can stop. The work does not.</h2><div class="handoff"><b>WORKER A</b><i>checkpoint</i><strong>STOPPED</strong><i>resume</i><b>WORKER B</b><i>verify</i><strong>RESULT</strong></div><p class="micro">State, artifacts and evidence remain task-owned — not trapped inside a single agent.</p></div>
+</section>
+<section class="section evidence-section" id="evidence">
+<div class="section-head reveal"><div><span class="kicker">05 / EVIDENCE</span><h2>Trust is an artifact, not a feeling.</h2></div><p>Important claims should carry enough evidence for another human or agent to inspect what happened.</p></div>
+<div class="evidence-flow reveal"><div><span>01</span><b>CLAIM</b><small>What is asserted?</small></div><i>→</i><div><span>02</span><b>EVIDENCE</b><small>What proves it?</small></div><i>→</i><div><span>03</span><b>COMMAND</b><small>What was executed?</small></div><i>→</i><div><span>04</span><b>RESULT</b><small>What happened?</small></div></div>
+<div class="labels reveal"><span>OBSERVED</span><span>VERIFIED</span><span>INFERRED</span><span>PROPOSED</span><span>UNKNOWN</span></div>
+</section>
+<section class="section projects" id="projects">
+<div class="section-head reveal"><div><span class="kicker">06 / PUBLIC WORK</span><h2>The engineering behind the vision.</h2></div><p>Explore the public repositories and the wider system vision.</p></div>
+<div class="project-grid reveal">
+<a href="https://github.com/faridbarahimi/AICP-Core-Platform" target="_blank" rel="noopener" class="project featured"><span class="project-num">01</span><span class="project-tag">CORE PLATFORM</span><h3>AICP Core Platform ↗</h3><p>The engineering foundation for governed AI work orchestration, execution and evidence.</p><footer><span>GitHub</span><span>Open source</span></footer></a>
+<a href="https://github.com/faridbarahimi" target="_blank" rel="noopener" class="project"><span class="project-num">02</span><span class="project-tag">ECOSYSTEM</span><h3>Farid Barahimi ↗</h3><p>Public engineering identity, experiments, architecture and active projects.</p><footer><span>GitHub profile</span><span>Live</span></footer></a>
+<a href="https://github.com/faridbarahimi/faridbarahimi.github.io" target="_blank" rel="noopener" class="project"><span class="project-num">03</span><span class="project-tag">THIS SHOWCASE</span><h3>Portfolio source ↗</h3><p>This interactive showcase — designed as the public front door to the system.</p><footer><span>Source</span><span>GitHub Pages</span></footer></a>
+</div>
+</section>
+<section class="closing reveal"><span class="kicker">AICP / PUBLIC SHOWCASE</span><h2>Building the control plane for AI work.</h2><p>For sponsors, collaborators, technical partners and people who want to build with the system.</p><div><a class="btn primary" href="https://github.com/faridbarahimi/AICP-Core-Platform" target="_blank" rel="noopener">Explore AICP Core ↗</a><a class="btn ghost" href="https://github.com/faridbarahimi" target="_blank" rel="noopener">Connect via GitHub ↗</a></div></section>
+</main>
+<footer><span>FARID BARAHIMI / AICP</span><span>AI SYSTEMS · WORK ORCHESTRATION · GOVERNANCE</span><a href="#">Back to top ↑</a></footer>
+<script src="enhance.js"></script>
+</body></html>
