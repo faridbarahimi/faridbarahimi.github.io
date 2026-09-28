@@ -1,89 +1,26 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AICP Tools — Kashkool</title>
-<meta name="description" content="AICP Kashkool — governed, reusable tools for documents, images, audio, video and everyday work.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./style.css">
-</head>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css"></head>
 <body>
-<header class="nav">
-  <a class="brand" href="../"><span class="brand-mark">A</span><span>AICP / KASHKOOL</span></a>
-  <nav><a href="#pdf">PDF</a><a href="#image">IMAGE</a><a href="#media">MEDIA</a><a href="#quick">QUICK</a><a href="../docs/">DOCS</a><a class="back" href="../">AICP ↗</a></nav>
-</header>
-<main>
-<section class="hero">
-  <div>
-    <p class="eyebrow">TOOLS / CAPABILITY CATALOG / PUBLIC PREVIEW</p>
-    <h1>Work tools.<br><em>One control plane.</em></h1>
-    <p class="lede">Kashkool is the operational face of AICP's Capability Fabric: discover once, qualify, reuse — with lightweight work kept in the browser and heavy work isolated behind governed jobs.</p>
-    <div class="hero-meta"><span>15 MVP CAPABILITIES</span><span>CLIENT + QUEUE</span><span>QUALIFIED / CANDIDATE</span></div>
-  </div>
-  <aside class="status">
-    <span class="status-kicker">FABRIC STATUS</span>
-    <strong>READY TO DISCOVER</strong>
-    <p>Registry-backed catalog. Heavy execution is quota-controlled and evidence-producing.</p>
-    <div class="status-row"><span>LIGHT</span><b>FREE</b></div>
-    <div class="status-row"><span>HEAVY</span><b>3–5 / MONTH</b></div>
-  </aside>
-</section>
-
-<section class="catalog" id="pdf">
-  <div class="section-head"><span>01 / DOCUMENTS</span><h2>PDF &amp; documents</h2><p>High-value document operations. Heavy transforms run through the queue boundary.</p></div>
-  <div class="grid">
-    <article class="tool featured" data-slug="word-to-pdf" data-mode="queue"><span class="num">01</span><span class="tag heavy">QUEUE</span><h3>Word ↔ PDF</h3><p>Convert DOCX and PDF while preserving the governed job contract.</p><button class="tool-btn">Open tool</button></article>
-    <article class="tool" data-slug="pdf-merge-split" data-mode="queue"><span class="num">02</span><span class="tag heavy">QUEUE</span><h3>Merge / Split / Rotate</h3><p>Reorder pages, split ranges and rotate documents.</p><button class="tool-btn">Open tool</button></article>
-    <article class="tool" data-slug="pdf-compress" data-mode="queue"><span class="num">03</span><span class="tag heavy">QUEUE</span><h3>Compress PDF</h3><p>Reduce file size with a controlled output artifact.</p><button class="tool-btn">Open tool</button></article>
-    <article class="tool" data-slug="pdf-ocr-fa" data-mode="queue"><span class="num">04</span><span class="tag heavy">QUEUE</span><h3>OCR فارسی + English</h3><p>Extract searchable text from scanned documents.</p><button class="tool-btn">Open tool</button></article>
-    <article class="tool" data-slug="pdf-image" data-mode="queue"><span class="num">05</span><span class="tag heavy">QUEUE</span><h3>PDF ↔ Image</h3><p>Render pages or assemble images into a PDF.</p><button class="tool-btn">Open tool</button></article>
-  </div>
-</section>
-
-<section class="catalog" id="image">
-  <div class="section-head"><span>02 / IMAGE</span><h2>Image workbench</h2><p>Browser-first where possible; isolated processing for AI-heavy transforms.</p></div>
-  <div class="grid">
-    <article class="tool featured" data-slug="remove-background" data-mode="queue"><span class="num">06</span><span class="tag heavy">QUEUE</span><h3>Remove background</h3><p>rembg-backed background removal with a reusable capability contract.</p><button class="tool-btn">Open tool</button></article>
-    <article class="tool" data-slug="passport-photo" data-mode="queue"><span class="num">07</span><span class="tag heavy">QUEUE</span><h3>Passport photo</h3><p>Crop and prepare ID photos against country-specific presets.</p><button class="tool-btn">Open tool</button></article>
-    <article class="tool" data-slug="image-resize-compress" data-mode="client"><span class="num">08</span><span class="tag client">BROWSER</span><h3>Resize + compress</h3><p>Resize images locally without uploading the source file.</p><button class="tool-btn">Open tool</button></article>
-    <article class="tool" data-slug="image-convert" data-mode="client"><span class="num">09</span><span class="tag client">BROWSER</span><h3>Convert format</h3><p>Convert common browser-supported image formats locally.</p><button class="tool-btn">Open tool</button></article>
-  </div>
-</section>
-
-<section class="catalog" id="media">
-  <div class="section-head"><span>03 / MEDIA</span><h2>Audio &amp; video</h2><p>Network and AI workloads are isolated from the public page and return job evidence.</p></div>
-  <div class="grid">
-    <article class="tool featured" data-slug="extract-audio" data-mode="queue"><span class="num">10</span><span class="tag heavy">QUEUE</span><h3>Extract audio</h3><p>yt-dlp + FFmpeg contract for authorized media URLs.</p><button class="tool-btn">Open tool</button></article>
-    <article class="tool" data-slug="media-convert" data-mode="queue"><span class="num">11</span><span class="tag heavy">QUEUE</span><h3>Media conversion</h3><p>Convert audio and video formats through an isolated worker.</p><button class="tool-btn">Open tool</button></article>
-    <article class="tool" data-slug="whisper-transcribe" data-mode="queue"><span class="num">12</span><span class="tag heavy">QUEUE</span><h3>Whisper transcription</h3><p>Speech-to-text with language-aware output and evidence.</p><button class="tool-btn">Open tool</button></article>
-  </div>
-</section>
-
-<section class="catalog" id="quick">
-  <div class="section-head"><span>04 / QUICK</span><h2>Small tools.<br><em>Zero queue.</em></h2><p>Fast browser-side utilities are designed to stay free and private.</p></div>
-  <div class="grid">
-    <article class="tool quick" data-slug="qr-code" data-mode="client"><span class="num">13</span><span class="tag client">BROWSER</span><h3>QR Code</h3><p>Generate a QR locally in the browser.</p><button class="tool-btn">Open tool</button></article>
-    <article class="tool quick" data-slug="word-counter" data-mode="client"><span class="num">14</span><span class="tag client">BROWSER</span><h3>Word counter</h3><p>Count words, characters and lines locally.</p><button class="tool-btn">Open tool</button></article>
-    <article class="tool quick" data-slug="password-generator" data-mode="client"><span class="num">15</span><span class="tag client">BROWSER</span><h3>Password generator</h3><p>Generate strong passwords without a server round trip.</p><button class="tool-btn">Open tool</button></article>
-  </div>
-</section>
-
-<section class="governance">
-  <div><span class="eyebrow">CAPABILITY FABRIC</span><h2>Reuse before build.</h2><p>Every listed capability is intended to come from discovery → normalization → qualification → registry → routing. Unknown or policy-failing candidates stay outside the trusted set.</p></div>
-  <div class="fabric-flow"><b>DISCOVER</b><i>→</i><b>DEDUP</b><i>→</i><b>QUALIFY</b><i>→</i><b>REGISTER</b><i>→</i><b>ROUTE</b></div>
-  <button class="build-btn" id="buildSuggestion">Build this capability</button>
-  <small id="buildNote">Suggestion only. No automatic build or execution.</small>
-</section>
-</main>
-
-<dialog id="toolDialog">
-  <div class="dialog-head"><span id="dialogTag"></span><button id="closeDialog" aria-label="Close">×</button></div>
-  <div id="dialogBody"></div>
-</dialog>
-<script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.4/build/qrcode.min.js"></script>
-<script src="./app.js"></script>
-</body>
-</html>
+<header class="topbar"><a class="brand" href="../"><span class="brand-mark">A</span><span>AICP / KASHKOOL</span></a><nav><a href="../">AICP</a><a href="../docs/">DOCS</a><a class="cloud" href="https://aicp-chat-clean.aicp-farid.workers.dev/" target="_blank" rel="noopener">CLOUDFLARE ↗</a></nav></header>
+<div class="workspace"><aside class="sidebar">
+<div class="side-top"><div><span class="eyebrow">TOOL EXPLORER</span><strong>15 CAPABILITIES</strong></div><button id="collapseAll">COLLAPSE</button></div>
+<label class="search">⌕ <input id="search" type="search" placeholder="Search tools…"></label>
+<nav id="tree">
+<section class="tree-group"><button class="tree-head"><span>01</span><b>Documents &amp; PDF</b><i>⌄</i></button><div class="tree-items">
+<a href="#word-to-pdf" data-tool="word-to-pdf">01&nbsp;&nbsp;Word ↔ PDF</a><a href="#pdf-merge-split" data-tool="pdf-merge-split">02&nbsp;&nbsp;Merge / Split / Rotate</a><a href="#pdf-compress" data-tool="pdf-compress">03&nbsp;&nbsp;Compress PDF</a><a href="#pdf-ocr-fa" data-tool="pdf-ocr-fa">04&nbsp;&nbsp;OCR فارسی + English</a><a href="#pdf-image" data-tool="pdf-image">05&nbsp;&nbsp;PDF ↔ Image</a></div></section>
+<section class="tree-group"><button class="tree-head"><span>02</span><b>Images</b><i>⌄</i></button><div class="tree-items">
+<a href="#remove-background" data-tool="remove-background">06&nbsp;&nbsp;Remove background</a><a href="#passport-photo" data-tool="passport-photo">07&nbsp;&nbsp;Passport photo</a><a href="#image-resize-compress" data-tool="image-resize-compress">08&nbsp;&nbsp;Resize + compress</a><a href="#image-convert" data-tool="image-convert">09&nbsp;&nbsp;Convert format</a></div></section>
+<section class="tree-group"><button class="tree-head"><span>03</span><b>Audio &amp; Video</b><i>⌄</i></button><div class="tree-items">
+<a href="#extract-audio" data-tool="extract-audio">10&nbsp;&nbsp;Extract audio</a><a href="#media-convert" data-tool="media-convert">11&nbsp;&nbsp;Media conversion</a><a href="#whisper-transcribe" data-tool="whisper-transcribe">12&nbsp;&nbsp;Whisper transcription</a></div></section>
+<section class="tree-group"><button class="tree-head"><span>04</span><b>Quick Utilities</b><i>⌄</i></button><div class="tree-items">
+<a href="#qr-code" data-tool="qr-code">13&nbsp;&nbsp;QR Code</a><a href="#word-counter" data-tool="word-counter">14&nbsp;&nbsp;Word counter</a><a href="#password-generator" data-tool="password-generator">15&nbsp;&nbsp;Password generator</a></div></section>
+</nav><div class="side-foot">DISCOVER → QUALIFY → ROUTE</div></aside>
+<main class="content"><div class="mobile-tools"><button id="mobileMenu">TOOLS / TREE</button><span>15 tools</span></div>
+<section class="intro"><span class="eyebrow">AICP CAPABILITY FABRIC / KASHKOOL</span><h1>Find the right tool.<br><em>Without getting lost.</em></h1><p>Browse the tree, search by capability, then open only what you need.</p></section>
+<section id="toolPanel" class="tool-panel"></section>
+<section class="all-tools"><div class="list-head"><span>CATALOG</span><span id="resultCount">15 tools</span></div><div id="cards" class="cards"></div></section>
+<section class="architecture"><h2>Discover first.<br><em>Build only when needed.</em></h2><p>Lightweight work can stay local. Heavy work passes authorization, quota, queue, isolation and evidence boundaries.</p></section></main></div>
+<script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.4/build/qrcode.min.js"></script><script src="./app.js"></script></body></html>
